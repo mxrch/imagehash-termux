@@ -12,7 +12,7 @@ with open('README.rst') as f:
 
 setup(
 	name='ImageHash',
-	version='4.3.1',
+	version='4.3.1-termux',
 	author='Johannes Buchner',
 	author_email='buchner.johannes@gmx.at',
 	packages=['imagehash'],
@@ -27,8 +27,7 @@ setup(
 	install_requires=[
 		'numpy',
 		'scipy',		# for phash
-		'pillow',		# or PIL
-		'PyWavelets',  # for whash
+		'pillow'
 	],
 	test_suite='tests',
 	tests_require=['pytest>=3'],
